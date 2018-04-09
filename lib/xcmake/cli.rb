@@ -70,7 +70,7 @@ module Xcmake
           group_path = "#{s["target"]["name"]}/#{s["group"]}"
         end
 
-        g.create_target(s["target"]["name"], s["target"]["type"])
+        g.create_target(s["target"]["name"], s["target"]["type"].to_sym)
         g.create_group(group_path) unless s["group"].to_s.empty?
         g.create_source("#{group_path}/#{s['prefix']}#{name}#{s['suffix']}", nil)
       end
