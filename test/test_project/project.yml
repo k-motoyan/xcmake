@@ -1,0 +1,9 @@
+name: TestProject
+options:
+  bundleIdPrefix: com.test.xcmake
+targets:
+  TestProject:
+    type: application
+    platform: iOS
+    deploymentTarget: "11.0"
+    sources: [TestProject]

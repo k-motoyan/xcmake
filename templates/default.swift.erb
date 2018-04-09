@@ -1,0 +1,13 @@
+//
+//  <%= params[:name] %>.swift
+<% if !params[:target].nil? -%>
+//  <%= params[:target] %>
+<% end; -%>
+//
+//  Created by <%= `whoami`.chomp %> on <%= Date.today.strftime("%Y/%m/%d") %>.
+<% if !params[:organizer].nil? -%>
+//  Copyright © <%= Date.today.strftime("%Y") %> <%= params[:organizer] %>. All rights reserved.
+<% end -%>
+//
+
+import Foundation

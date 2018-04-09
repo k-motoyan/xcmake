@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+ROOT_DIR = File.expand_path("..", __dir__)
+VENDOR_DIR = File.join(ROOT_DIR, "vendor", "bundle")
+
+if !Dir.exist?(VENDOR_DIR)
+  Dir.chdir(ROOT_DIR) do
+    exec("bundle install --path=vendor/bundle")
+  end
+end

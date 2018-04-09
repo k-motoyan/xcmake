@@ -1,0 +1,17 @@
+/.bundle/
+/.idea/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/vendor/
+.DS_Store
+
+/test/test_project/*
+/test/test_project/TestProject/*
+!project.yml
+!scaffold.yml
+!.keep

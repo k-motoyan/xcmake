@@ -1,0 +1,23 @@
+platform: ios
+sources:
+  - target:
+      name: View
+      type: framework
+    group: ""
+    prefix: ""
+    suffix: View.swift
+    template: ""
+  - target:
+      name: ViewModel
+      type: framework
+    group: ""
+    prefix: ""
+    suffix: ViewModel.swift
+    template: ""
+  - target:
+      name: Model
+      type: framework
+    group: ""
+    prefix: ""
+    suffix: Model.swift
+    template: ""
