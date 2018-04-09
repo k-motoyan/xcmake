@@ -1,6 +1,8 @@
 require "fileutils"
 require "pathname"
 require "xcodeproj"
+require "xcmake/logger"
+require "xcmake/helpers/xcodeproj_helper"
 
 module Xcmake
   class Generator

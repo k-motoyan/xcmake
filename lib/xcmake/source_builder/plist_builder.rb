@@ -1,3 +1,5 @@
+require "xcmake/logger"
+
 module Xcmake
   class PlistBuilder
     include Xcmake::Logger

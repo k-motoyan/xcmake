@@ -1,5 +1,3 @@
-require "xcmake/logger"
-require "xcmake/helpers/xcodeproj_helper"
 require "xcmake/cli"
 require "xcmake/generator"
 require "xcmake/version"

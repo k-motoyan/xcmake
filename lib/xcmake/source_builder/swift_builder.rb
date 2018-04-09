@@ -1,5 +1,6 @@
 require "erb"
 require "date"
+require "xcmake/logger"
 
 module Xcmake
   class SwiftBuilder
