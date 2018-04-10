@@ -1,8 +1,8 @@
-require "xcmake/logger"
+require "xcmake/helpers/log_helper"
 
 module Xcmake
   class PlistBuilder
-    include Xcmake::Logger
+    include Xcmake::LogHelper
 
     def initialize(template_path=nil)
       template_path = template_path || File.expand_path("../../../templates/default.plist.erb", __dir__)

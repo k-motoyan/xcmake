@@ -1,10 +1,10 @@
 require "erb"
 require "date"
-require "xcmake/logger"
+require "xcmake/helpers/log_helper"
 
 module Xcmake
   class SwiftBuilder
-    include Xcmake::Logger
+    include Xcmake::LogHelper
 
     def initialize(template_path=nil)
       template_path = template_path || File.expand_path("../../../templates/default.swift.erb", __dir__)

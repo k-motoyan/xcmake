@@ -1,12 +1,12 @@
 require "fileutils"
 require "pathname"
 require "xcodeproj"
-require "xcmake/logger"
+require "xcmake/helpers/log_helper"
 require "xcmake/helpers/xcodeproj_helper"
 
 module Xcmake
   class Generator
-    include Xcmake::Logger
+    include Xcmake::LogHelper
     include Xcmake::XcodeprojHelper
 
     def initialize(project_path)

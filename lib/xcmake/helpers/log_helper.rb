@@ -2,7 +2,7 @@ require "logger"
 require "colorize"
 
 module Xcmake
-  module Logger
+  module LogHelper
     def log_info(text)
       stdout_logger.info(text.green)
     end
@@ -27,7 +27,7 @@ module Xcmake
     end
 
     def create_logger(output)
-      logger = ::Logger.new(output)
+      logger = Logger.new(output)
       logger.progname = "Xcmake"
       logger.formatter =  proc { |severity, datetime, progname, message|
         "#{progname} : #{message}\n"

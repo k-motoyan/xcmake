@@ -1,10 +1,10 @@
 require "yaml"
 require "thor"
-require "xcmake/logger"
+require "xcmake/helpers/log_helper"
 
 module Xcmake
   class Cli < Thor
-    include Xcmake::Logger
+    include Xcmake::LogHelper
 
     desc "target [NAME]", "Generate new target."
     method_option :project, aliases: "-p", desc: "Project path. If unspecified, use `*.xcodeproj` in the current directory."
