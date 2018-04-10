@@ -8,7 +8,7 @@ module Xcmake
     end
 
     def log_error(text)
-      stdout_logger.error(text.red)
+      stderr_logger.error(text.red)
     end
 
     def log_error!(text)
