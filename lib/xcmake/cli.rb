@@ -41,6 +41,7 @@ module Xcmake
     desc "source [NAME]", "Generate source file."
     method_option :project, aliases: "-p", desc: "Project path. If unspecified, use `*.xcodeproj` in the current directory."
     method_option :delete, aliases: "-d", desc: "Delete source file."
+    method_option :template, aliases: "-t", desc: "Custom template file path."
     def source(name)
       project_path = options[:project] || default_project!
 
@@ -48,7 +49,7 @@ module Xcmake
 
       if options[:delete]
       else
-        g.create_source(name)
+        g.create_source(name, options[:template])
       end
     end
 
